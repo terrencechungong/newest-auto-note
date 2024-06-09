@@ -1,0 +1,128 @@
+.mainDiv {
+    height: 1000px;
+    width: 800px;
+    padding: 10px;
+
+    background: {
+        color: white;
+    }
+
+    ;
+
+    border: {
+        radius: 25px;
+    }
+
+    text: {
+        align: center;
+    }
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.introText {
+    font: {
+        weight: 500;
+        size: 30px;
+    }
+
+    padding: {
+        top: 10px;
+    }
+}
+
+.summaryText {
+    padding: 10px 50px 20px 50px;
+    /* top right bottom left */
+}
+
+
+.introDivGrid {
+    padding: 29px 30px 0 30px;
+    display: grid;
+    row-gap: 1.5rem;
+    grid-template-rows: 1.2fr 3fr 0.7fr;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin divContent {
+    border-radius: 10px;
+    background-color: #3498db;
+    /* Example background color for items */
+}
+
+.introContentDiv {
+    @include divContent;
+
+
+}
+
+.topDivStyle {
+    @include divContent;
+    background-color: #ebedef;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.innerTopDiv {
+    height: 90%;
+    width: 90%;
+    background-color: transparent;
+    border: 2px solid transparent; // Initial border set to transparent
+    border-radius: 10px;
+    transition: border-width 0.3s ease, border-color 0.3s ease; // Smooth transition for border properties
+    padding: 0 15px 0 15px;
+    text-align: left;
+
+    &:hover {
+        border-width: 0.5px; // Change border width on hover
+        border-color: rgb(190, 190, 190); // Change border color on hover
+        color: #008fff; // Change border color on hover
+    }
+
+    ;
+    cursor: pointer;
+    /* Ensure the cursor is a pointer on hover */
+    transition: background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+    /* Smooth transition for background color and border color */
+}
+
+.innerDivTitle {
+    font: {
+        weight: 500;
+    }
+
+    padding: 10px 0 8px 0;
+}
+
+.innerDivBody {
+    font-size: 14px;
+    color: rgb(132, 132, 132);
+}
+
+.selected {
+    background-color: white;
+    border-width: 0.5px; // Change border width on hover
+    border-color: rgb(190, 190, 190);
+}
+
+.selectedText {
+    color: #008fff;
+}
+
+.videoDiv {
+    border-radius: 10px;
+}
