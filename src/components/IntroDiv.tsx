@@ -22,7 +22,7 @@ const IntroDiv: React.FC = () => {
         <>
             <div className='mainDiv'>
                 <p className='introText'>{intro_text}</p>
-                <p className='summaryText'>{intro_summary}</p>
+                <div className='summaryText'>{intro_summary}</div>
                 <StartButton width={'190px'} fSize={'23px'}/>
                 <div className='introDivGrid'>
                     <div className='topDivStyle'>

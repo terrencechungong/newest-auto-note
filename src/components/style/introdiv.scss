@@ -1,6 +1,6 @@
 .mainDiv {
-    height: clamp(1000px, 1200px, 1300px);
-    width: 800px;
+    height: clamp(1200px, 1300px, 1400px);
+    width: 1000px;
     padding: 10px;
 
     background: {
@@ -27,8 +27,8 @@
 
 .introText {
     font: {
-        weight: 500;
-        size: 30px;
+        weight: 700;
+        size: 50px;
     }
 
     padding: {
@@ -39,7 +39,8 @@
 .summaryText {
     padding: 10px 50px 20px 50px;
     /* top right bottom left */
-    font-size: 30px;
+    font-size: clamp(25px, 2vw, 30px);
+    width: clamp(80%, 90%, 90%);
 }
 
 
