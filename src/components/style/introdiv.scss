@@ -97,6 +97,7 @@
     transition: background-color 0.3s ease,
     border-color 0.3s ease,
     color 0.3s ease;
+    overflow: hidden;
     /* Smooth transition for background color and border color */
 }
 
@@ -124,5 +125,41 @@
 }
 
 .videoDiv {
-    border-radius: 10px;
+    border-radius: 12px;
+    border-width: 0;
+}
+
+.yo {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.1);
+    /* Add shadow effect */
+}
+
+.logoCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.logoColOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.logoColTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.image {
+    width: 14px;
+    height: 4px;
 }

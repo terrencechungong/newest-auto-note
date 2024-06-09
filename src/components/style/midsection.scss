@@ -1,0 +1,42 @@
+.mainDivMid {
+    height: 1000px;
+    width: 800px;
+    margin-top: 26px;
+    background-color: white;
+    border-radius: 23px;
+    padding: 10px;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(auto-fit, 1fr)
+
+}
+
+.textAndPhotoGrid {
+    height: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: .8fr 0.8fr
+}
+
+.midDivTextContainer {
+    display: block;
+}
+
+.midDivTextTitle {
+    font: {
+        weight: 700;
+        size: 35px;
+    }
+    padding-bottom: 17px;
+
+}
+
+.midDivPText {
+    line-height: 1.5;
+    color: rgb(70, 70, 70);
+    font: {
+        weight: 300;
+        size: 20px;
+    }
+
+}

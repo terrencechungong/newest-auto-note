@@ -1,6 +1,33 @@
 .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     place-items: center;
+    padding-top: 60px;
 }
+
+.header {
+    padding: 57px 0 16px 0;
+    color: black;
+    transition: background-color 0.4s ease;
+    background-color: transparent;
+  }
+  
+  /* Page content */
+
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    margin:0;
+    top: 0;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    background-color: white;
+    width: 100%;
+    box-shadow: 19px 60px 20px rgba(100, 100, 100, 0.1);
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 142px;
+  }

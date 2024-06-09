@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import './style/introdiv.scss';
 import Button from '@mui/material/Button';
 import TopDivContent from './textContent/landingPageContent';
+import exampleImage from '../assets/Meta-Logo.png';
 
 
 const IntroDiv: React.FC = () => {
@@ -38,13 +39,24 @@ const IntroDiv: React.FC = () => {
                             </div>
                         )}
                     </div>
-                    <div className='introContentDiv'>
-                        <video width="100%" height="100%" className='videoDiv' controls>
-                            <source src="./video_landing.mp4" type="video/mp4" />
+                    <div className='introContentDiv yo'>
+                        <video width="100%" height="100%" className='videoDiv' loop autoPlay muted>
+                            <source src="https://cdn.prod.website-files.com/618e9316785b3582a5178502/65ca439063af578816bf4724_2792_AI%20Meeting%20Assistant_1600%20x%20900_white%20bg_080224-transcode.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div className='introContentDiv'></div>
+                    <div className='introContentDiv logoCol'>
+                        <div className='logoColOne'>
+                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
+                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
+                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
+                        </div>
+                        <div className='logoColTwo'>
+                        <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
+                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
+                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
