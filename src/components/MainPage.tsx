@@ -9,8 +9,9 @@ const MainPage: React.FC = () => {
     <div>
       <div style={{ paddingTop: 30 }}>
       </div>
-      <Navbar />
+
       <div className='content'>
+        <Navbar />
         <IntroDiv />
         <MidSectionDiv />
       </div>

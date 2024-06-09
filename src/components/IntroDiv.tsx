@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import './style/introdiv.scss';
-import Button from '@mui/material/Button';
 import TopDivContent from './textContent/landingPageContent';
 import exampleImage from '../assets/Meta-Logo.png';
+import StartButton from './StartButton';
 
 
 const IntroDiv: React.FC = () => {
@@ -23,11 +23,7 @@ const IntroDiv: React.FC = () => {
             <div className='mainDiv'>
                 <p className='introText'>{intro_text}</p>
                 <p className='summaryText'>{intro_summary}</p>
-                <Button variant="contained"
-                    sx={button_sx}
-                    disableElevation>
-                    Start for free
-                </Button>
+                <StartButton width={'190px'} fSize={'23px'}/>
                 <div className='introDivGrid'>
                     <div className='topDivStyle'>
                         {TopDivContent.map((content, index) =>

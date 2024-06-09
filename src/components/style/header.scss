@@ -1,0 +1,56 @@
+.header {
+    padding: 0 0 10px 0;
+    color: black;
+    transition: background-color 0.4s ease;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  /* Page content */
+.innerDiv {
+    padding-top: 20px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+}
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    margin:0;
+    top: 0;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    background-color: white;
+    box-shadow: 19px 60px 20px rgba(100, 100, 100, 0.1);
+    width: 100%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .mainDiv {
+    margin-top: 70px;
+  }
+
+  .nav-section {
+    display: grid;
+    grid-template-columns: 0.5fr 0.4fr 1fr 0.7fr;
+    p{
+        font-size: clamp(8px, 1vw, 16px);
+
+    }
+  }
+
+  .authText {
+    margin-left: auto;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    p {
+        padding-right: 19px;
+        font-size: clamp(6px, 1vw, 15px);
+
+    }
+  }

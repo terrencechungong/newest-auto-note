@@ -1,5 +1,6 @@
 import React, { RefObject, useEffect, useRef, useState } from 'react';
 import './style/header.scss'
+import StartButton from './StartButton';
 
 const Navbar: React.FC = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -33,7 +34,21 @@ const Navbar: React.FC = () => {
     }, []);
 
     return (
-        <div className={`header ${isSticky ? 'sticky' : ''}`}>yoo</div>
+        <div className={`header ${isSticky ? 'sticky' : ''}`}>
+            <div className='innerDiv'>
+                <div className='nav-section'>
+                    <p>Solutions</p>
+                    <p>Pricing</p>
+                    <p>Apps & Integrations</p>
+                    <p>Resources</p>
+                </div>
+                <div className='authText'>
+                    <p>Schedule a Demo</p>
+                    <p>Log In</p>
+                    <StartButton width={'min(132px)'} fSize={'14.1px'} />
+                </div>
+            </div>
+        </div>
     )
 };
 
