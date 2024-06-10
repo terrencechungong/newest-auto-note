@@ -14,7 +14,7 @@ const StartButton: React.FC<ButtonProps> = ({width, fSize}) => {
 
         fontWeight: '600',
         marginTop: '-11px',
-        width: width,
+         width,
         marginBottom:'auto'
     }
     return <div style={button_style}>Start for free</div>

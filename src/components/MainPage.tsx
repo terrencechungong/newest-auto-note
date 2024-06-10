@@ -3,6 +3,9 @@ import Navbar from './Navbar';
 import IntroDiv from './IntroDiv';
 import './style/mainpage.scss'
 import MidSectionDiv from './MidSectionDiv';
+import {
+  Link
+} from "react-router-dom";
 
 const MainPage: React.FC = () => {
   return (

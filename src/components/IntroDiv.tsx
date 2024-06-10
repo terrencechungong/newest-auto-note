@@ -21,9 +21,9 @@ const IntroDiv: React.FC = () => {
     return (
         <>
             <div className='mainDiv'>
-                <p className='introText'>{intro_text}</p>
+                <div className='introText'><p className='introo'>{intro_text}</p></div>
                 <div className='summaryText'>{intro_summary}</div>
-                <StartButton width={'190px'} fSize={'23px'}/>
+                <StartButton width={'clamp(220px, 8vw, 260px)'} fSize={'25px'} />
                 <div className='introDivGrid'>
                     <div className='topDivStyle'>
                         {TopDivContent.map((content, index) =>
@@ -43,14 +43,14 @@ const IntroDiv: React.FC = () => {
                     </div>
                     <div className='introContentDiv logoCol'>
                         <div className='logoColOne'>
-                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
-                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
-                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
+                            <img src="https://cdn.prod.website-files.com/618e9316785b3582a5178502/65ba7bb12bd967300c25e950_Amazon.svg" width="80%" height="80%" alt="Description" />
+                            <img src="https://cdn.prod.website-files.com/618e9316785b3582a5178502/6643ff8070ff4a555db377f9_grant-thorton.svg" width="80%" height="80%" alt="Description" />
+                            <img src="https://cdn.prod.website-files.com/618e9316785b3582a5178502/61f1554b86ff2cd5e536307b_ibm-logo.svg" width="80%" height="80%" alt="Description" />
                         </div>
                         <div className='logoColTwo'>
-                        <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
-                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
-                            <div style={{ color: 'white', backgroundColor: 'black' }}>11</div>
+                            <img src="https://cdn.prod.website-files.com/618e9316785b3582a5178502/65ba7befab663a9b615307aa_NBC.svg" width="80%" height="80%" alt="Description" />
+                            <img src="https://cdn.prod.website-files.com/618e9316785b3582a5178502/65ba7bb18129c7a788209ba9_Walgreens.svg" width="80%" height="80%" alt="Description" />
+                            <img src="https://cdn.prod.website-files.com/618e9316785b3582a5178502/65ba7bb1f604c692aa2850c8_UCLA.svg" width="80%" height="80%" alt="Description" />
                         </div>
                     </div>
                 </div>

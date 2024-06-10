@@ -1,6 +1,6 @@
 .mainDivMid {
     height: 1000px;
-    width: 1000px;
+    width: clamp(1000px, 97%, 2000px);
     margin-top: 26px;
     background-color: white;
     border-radius: 23px;

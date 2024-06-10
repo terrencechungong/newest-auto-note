@@ -1,6 +1,7 @@
 import React, { RefObject, useEffect, useRef, useState } from 'react';
 import './style/header.scss'
 import StartButton from './StartButton';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -44,7 +45,7 @@ const Navbar: React.FC = () => {
                 </div>
                 <div className='authText'>
                     <p>Schedule a Demo</p>
-                    <p>Log In</p>
+                    <Link to="/login">Log In</Link>
                     <StartButton width={'min(132px)'} fSize={'14.1px'} />
                 </div>
             </div>
